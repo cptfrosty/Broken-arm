@@ -6,8 +6,7 @@
     <title>Unity WebGL Player | Broken arm</title>
   </head>
   <body style="text-align: center">
-    //<canvas id="unity-canvas" width=1080 height=1920 style="width: 1080px; height: 1920px; background: #231F20"></canvas>
-    <canvas id="unity-canvas" position:absolute; left:0px; min-height:100%; min-width:100%; max-height:100%; max-width:100%; height:auto; width:auto; background: #231F20"></canvas>
+    <canvas id="unity-canvas" width=1080 height=1920 style="width: 1080px; height: 1920px; background: #231F20"></canvas>
     <script src="Build/Build.loader.js"></script>
     <script>
       createUnityInstance(document.querySelector("#unity-canvas"), {
@@ -19,7 +18,7 @@
         productName: "Broken arm",
         productVersion: "0.1",
         // matchWebGLToCanvasSize: false, // Uncomment this to separately control WebGL canvas render size and DOM element size.
-        // devicePixelRatio: 1, // Uncomment this to override low DPI rendering on high DPI displays.
+        devicePixelRatio: 1, // Uncomment this to override low DPI rendering on high DPI displays.
       });
     </script>
   </body>
